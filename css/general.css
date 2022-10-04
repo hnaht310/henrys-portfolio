@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   color: #000;
   line-height: 2.2rem;
+  height: 100vh;
 }
 
 .header {
@@ -31,6 +32,7 @@ body {
 .grid {
   display: grid;
   column-gap: 10rem;
+  row-gap: 8rem;
 }
 
 .grid--2-cols {
@@ -39,6 +41,12 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .heading-primary {
@@ -146,6 +154,64 @@ body {
   margin-right: 1.8rem;
 }
 
-.ideas-details p {
+/* .ideas-details p,
+.design-details p {
   margin-bottom: 2.4rem;
+} */
+
+/* p {
+  margin-bottom: 2.4rem;
+} */
+.disco ver {
+  background: #f7f7f8;
+}
+
+.patterns-list,
+.boards-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* .level-1 {
+  justify-self: end;
+} */
+
+.patterns-container {
+  display: flex;
+  width: 100%;
+  align-items: end;
+}
+
+.panel {
+  height: 80%;
+  flex: 1;
+  margin: 0 0.5rem;
+  /* set background-size: cover => cover the entire element while maintaining aspect ratio  */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: flex 0.5s ease-in;
+}
+
+.panel.active {
+  flex: 15;
+}
+
+.pattern-item {
+  font-weight: 900;
+  color: #a3a3a4;
+}
+.pattern-item:hover {
+  color: #000;
+}
+
+small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 1rem;
 }
