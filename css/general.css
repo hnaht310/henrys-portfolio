@@ -188,6 +188,7 @@ body {
   height: 80%;
   flex: 1;
   margin: 0 0.5rem;
+  opacity: 0.34;
   /* set background-size: cover => cover the entire element while maintaining aspect ratio  */
   background-size: cover;
   background-position: center;
@@ -199,13 +200,16 @@ body {
 
 .panel.active {
   flex: 15;
+  opacity: 1;
 }
 
 .pattern-item {
   font-weight: 900;
   color: #a3a3a4;
+  cursor: pointer;
 }
-.pattern-item:hover {
+
+.pattern-item.active {
   color: #000;
 }
 
@@ -214,4 +218,8 @@ small {
   font-weight: 400;
   font-style: italic;
   margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
 }
