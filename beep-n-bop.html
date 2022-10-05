@@ -128,14 +128,19 @@
           <div class="inspiration-details flex-column">
             <h3 class="heading-tertiary">Inspiration Board</h3>
             <p>Our artist was interested in working on an 80’s styled project. We searched for 80s themed restaurants and restaurant artifacts to guide the look of our characters and UI. I created three inspiration boards.</p>
-            <ul class="boards-list">
-              <li>a colorful vector shape look</li>
-              <li>a sepia-toned old-style look</li>
-              <li>drive-in look</li>
+            <ul class="titles-list">
+              <li class="board-title active" data-caption="vector">a colorful vector shape look</li>
+              <li class="board-title" data-caption="sepia">a sepia-toned old-style look</li>
+              <li class="board-title" data-caption="drive-in">drive-in look</li>
             </ul>
             <p>My partner and I were happy to work on any of the different styles. We left the decision to the artist who decided on the colorful vector shape look.</p>
           </div>
-          <img src="./src/images/beep-images/level-1.png" alt="" class="level-1">
+          <div class="inspiration-board-container">
+            <div class="inspiration-board active" data-caption="vector" style="background-image: url('./src/images/beep-images/inspiration-board/vector.png')"></div>
+            <div class="inspiration-board" data-caption="sepia" style="background-image: url('./src/images/beep-images/inspiration-board/sepia.png')"></div>
+            <div class="inspiration-board" data-caption="drive-in" style="background-image: url('./src/images/beep-images/inspiration-board/drive-in.png')"></div>
+          
+          </div>
         </div>
       </section>
     </main>

@@ -167,11 +167,14 @@ body {
 }
 
 .patterns-list,
-.boards-list {
+.boards-list,
+.titles-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  /* adjust li width to fit its content */
+  width: fit-content;
 }
 
 /* .level-1 {
@@ -203,13 +206,15 @@ body {
   opacity: 1;
 }
 
-.pattern-item {
+.pattern-item,
+.board-title {
   font-weight: 900;
   color: #a3a3a4;
   cursor: pointer;
 }
 
-.pattern-item.active {
+.pattern-item.active,
+.board-title.active {
   color: #000;
 }
 
@@ -222,4 +227,24 @@ small {
 
 .hidden {
   display: none;
+}
+
+.inspiration-board-container {
+  display: flex;
+  width: 100%;
+  align-items: end;
+}
+.inspiration-board {
+  height: 80%;
+  background-size: cover;
+  flex: 1;
+  opacity: 0.34;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: flex 0.8s ease-in-out;
+}
+
+.inspiration-board.active {
+  flex: 6;
+  opacity: 1;
 }

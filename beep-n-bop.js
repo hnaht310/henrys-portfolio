@@ -8,7 +8,7 @@ patternsContainer.addEventListener('click', (e) => {
   //   console.log(e.target);
   if (e.target.classList.contains('panel')) {
     const caption = e.target.dataset.caption;
-    removeActiveClass();
+    removeActiveClass(panels, patternItems);
     hideSmallPrints();
     // find the elements with the same data-caption:
     const elements = document.querySelectorAll(`[data-caption=${caption}]`);
@@ -28,7 +28,7 @@ patternsList.addEventListener('mouseover', (e) => {
   if (e.target.classList.contains('pattern-item')) {
     const clicked = e.target;
     const caption = clicked.dataset.caption;
-    removeActiveClass();
+    removeActiveClass(panels, patternItems);
     hideSmallPrints();
     // add the hidden class back to the selected item
     clicked.firstElementChild.classList.remove('hidden');
@@ -42,13 +42,13 @@ patternsList.addEventListener('mouseover', (e) => {
 });
 
 // Helper function to remove active class from cards and list items
-function removeActiveClass() {
-  // remove active class from all panel cards
-  panels.forEach((panel) => {
-    panel.classList.remove('active');
+function removeActiveClass(nodeList1, nodeList2) {
+  // remove active class from all cards
+  nodeList1.forEach((item) => {
+    item.classList.remove('active');
   });
-  // remove active class from all pattern items
-  patternItems.forEach((item) => {
+  // remove active class from all list items
+  nodeList2.forEach((item) => {
     item.classList.remove('active');
   });
 }
@@ -71,3 +71,40 @@ function hideSmallPrints() {
 // // ✅ Get only elements where data-id = box1
 // const elements3 = document.querySelectorAll(`[data-id="box1"]`);
 // console.log(elements3); // 👉️ [div]
+
+const boardsContainer = document.querySelector('.inspiration-board-container');
+const boardsList = document.querySelectorAll('.inspiration-board');
+const titlesContainer = document.querySelector('.titles-list');
+const boardTitles = document.querySelectorAll('.board-title');
+
+boardsContainer.addEventListener('click', (e) => {
+  if (e.target.classList.contains('inspiration-board')) {
+    removeActiveClass(boardsList, boardTitles);
+    // add active class to selected board
+    e.target.classList.add('active');
+    // add active class to respective title
+    const caption = e.target.dataset.caption;
+    const elements = document.querySelectorAll(`[data-caption=${caption}]`);
+    elements.forEach((element) => {
+      if (element.classList.contains('board-title')) {
+        element.classList.add('active');
+      }
+    });
+  }
+});
+
+titlesContainer.addEventListener('mouseover', (e) => {
+  if (e.target.classList.contains('board-title')) {
+    removeActiveClass(boardsList, boardTitles);
+    // add active class to selected title
+    e.target.classList.add('active');
+  }
+  //   add active class to respective board
+  const caption = e.target.dataset.caption;
+  const elements = document.querySelectorAll(`[data-caption=${caption}]`);
+  elements.forEach((element) => {
+    if (element.classList.contains('inspiration-board')) {
+      element.classList.add('active');
+    }
+  });
+});
