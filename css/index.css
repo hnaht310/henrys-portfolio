@@ -1,0 +1,116 @@
+.section-banner-home {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-top: 2.4rem;
+  padding-bottom: 4.8rem;
+}
+
+.banner-home-container {
+  min-width: 70rem;
+  width: 90vw;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.8rem;
+  justify-content: center;
+}
+
+.first-line,
+.last-line {
+  color: #919191;
+}
+
+.last-line {
+  color: #919191;
+  justify-self: end;
+}
+
+.banner-home-container h1 {
+  font-size: 3.6rem;
+}
+
+.overlay {
+  /* background-image: linear-gradient(to right, #fff, #36bbca); */
+  background-image: url(../src/images/index-images/overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -30% 45%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.case-study-link {
+  font-weight: 700;
+  color: #1234e6;
+  margin-top: 0.9rem;
+}
+
+.asel-info {
+  gap: 1.6rem;
+}
+
+.asel-heading,
+.chess-heading {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-container {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.grid-ux {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.asel-laptop-img,
+.asel-mobile-img {
+  width: 70%;
+}
+.chess-laptop-img,
+.chess-mobile-img {
+  width: 70%;
+}
+.beep-n-bop-img {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  /* .grid-ux {
+    grid-template-columns: 55fr 45fr;
+  } */
+  .img-container {
+    min-width: 0;
+    min-height: 0;
+  }
+  .asel-laptop-img,
+  .asel-mobile-img,
+  .chess-laptop-img,
+  .chess-mobile-img,
+  .beep-n-bop-img {
+    /* max-width: 100%;
+    
+    display: block; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    height: 100%;
+    /* object-fit: contain; */
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .grid-ux {
+    grid-template-columns: 1fr;
+    gap: 5.2rem;
+  }
+  .img-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

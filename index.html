@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- font for Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
     <!-- styling -->
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -31,13 +30,24 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link" id="author">Henry UX</a></li>
-          <li><a href="#" class="main-nav-link">Home</a></li>
-          <li><a href="#" class="main-nav-link">Work</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./index.html" class="main-nav-link">Work</a></li>
           <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
         </ul>
       </nav>
-      <section class="section-banner">
-        <!-- <div class="banner">
+      <section class="section-banner-home">
+        <div class="banner-home-container">
+          <p class="first-line">Hello I’m Henry Rosales,</p>
+          <h1>
+            Creative Solutions with
+            <span class="overlay">UX Thinking</span>
+          </h1>
+          <p class="last-line">is what I do.</p>
+        </div>
+      </section>
+
+      <!-- <section class="section-banner">
+        <div class="banner">
           <div class="banner-details">
             <h1 class="heading-primary">Beep N' Bop</h1>
             <p class="banner-description">
@@ -46,12 +56,55 @@
             </p>
           </div>
           <img
-            src="../src/images/beep-images/beep-banner.png"
+            src="./src/images/beep-images/beep-banner.png"
             alt="banner-image"
             class="banner-img"
           />
-        </div> -->
-      </section>
+        </div>
+      </section> -->
     </header>
+    <main>
+      <section class="section-gameplay-design">
+        <div class="container">
+          <h1 class="heading-primary">UX</h1>
+        </div>
+        <div class="container grid-ux grid--2-cols">
+          <!-- Asel -->
+          <div class="img-container">
+            <img src="./src/images/index-images/asel-laptop.png" alt="asel laptop site" class="asel-laptop-img">
+            <img src="./src/images/index-images/asel-mobile.png" alt="asel mobile site" class="asel-mobile-img">
+          </div>
+          <div class="asel-info flex-column">
+            <h2 class="heading-secondary asel-heading">Web Platform for Visual Feedback</h2>
+            <p>Asel is a consumer facing web platform for visual creatives to recieve feedback for their WIP projects.
+            </p>
+            <a href="#" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
+         
+
+          <!--Chess -->
+          <div class="img-container">
+            <img src="./src/images/index-images/chess-laptop.png" alt="chess laptop site" class="chess-laptop-img">
+            <img src="./src/images/index-images/chess-mobile.png" alt="chess mobile site" class="chess-mobile-img">
+          </div>
+          <div class="chess-info flex-column">
+            <h2 class="heading-secondary chess-heading">Redesign for Chess.com</h2>
+            <p>Chess.com held a redesign competition for their homepage. Their main feature is playing chess online.
+            </p>
+            <a href="#" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
+
+          <!-- Beep N Bop -->
+          <div class="img-container">
+            <img src="./src/images/index-images/beep-n-bop.png" alt="beep-n-bop site" class="beep-n-bop-img">
+          </div>
+          <div class="chess-info flex-column">
+            <h2 class="heading-secondary chess-heading">Redesign for Chess.com</h2>
+            <p>Chess.com held a redesign competition for their homepage. Their main feature is playing chess online.
+            </p>
+            <a href="beep-n-bop.html" class="case-study-link"><i class="fa-regular fa-clipboard fa-lg "></i>View Case Study</a>
+          </div>
+      </section>
+    </main>
   </body>
 </html>
