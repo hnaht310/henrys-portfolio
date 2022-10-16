@@ -301,3 +301,40 @@ iframe {
     height: 40vh;
   }
 }
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 36em) {
+  html {
+    overflow-x: hidden;
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .grid-user-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .logo-container {
+    gap: 2rem;
+  }
+
+  .fa-brands {
+    font-size: 8rem;
+    color: #303030;
+  }
+}

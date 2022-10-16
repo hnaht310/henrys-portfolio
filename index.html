@@ -23,13 +23,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./index.js" defer></script>
     <title>Henry UX</title>
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link" id="author">Henry UX</a></li>
+          <li><a href="./index.html" class="main-nav-link" id="author">Henry UX</a></li>
           <li><a href="./index.html" class="main-nav-link">Home</a></li>
           <li><a href="./index.html" class="main-nav-link">Work</a></li>
           <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
@@ -54,8 +55,8 @@
         <div class="container grid-ux grid--2-cols">
           <!-- Asel -->
           <div class="img-container">
-            <img src="./src/images/index-images/asel-laptop.png" alt="asel laptop site" class="asel-laptop-img">
-            <img src="./src/images/index-images/asel-mobile.png" alt="asel mobile site" class="asel-mobile-img">
+            <img src="./src/images/index-images/asel-laptop.png" alt="asel laptop site" class="asel-laptop-img project-img" data-caption="asel-laptop">
+            <img src="./src/images/index-images/asel-mobile.png" alt="asel mobile site" class="asel-mobile-img project-img" data-caption="asel-mobile">
           </div>
           <div class="asel-project-info flex-column">
             <h2 class="heading-secondary project-heading">Web Platform for Visual Feedback</h2>
@@ -67,8 +68,8 @@
 
           <!--Chess -->
           <div class="img-container">
-            <img src="./src/images/index-images/chess-laptop.png" alt="chess laptop site" class="chess-laptop-img">
-            <img src="./src/images/index-images/chess-mobile.png" alt="chess mobile site" class="chess-mobile-img">
+            <img src="./src/images/index-images/chess-laptop.png" alt="chess laptop site" class="chess-laptop-img project-img" data-caption="chess-laptop">
+            <img src="./src/images/index-images/chess-mobile.png" alt="chess mobile site" class="chess-mobile-img project-img" data-caption="chess-mobile">
           </div>
           <div class="chess-project-info flex-column">
             <h2 class="heading-secondary project-heading">Redesign for Chess.com</h2>
@@ -79,7 +80,7 @@
 
           <!-- Beep N Bop -->
           <div class="img-container">
-            <img src="./src/images/index-images/beep-n-bop.png" alt="beep-n-bop site" class="beep-n-bop-img">
+            <img src="./src/images/index-images/beep-n-bop.png" alt="beep-n-bop site" class="beep-n-bop-img project-img" data-caption="beep-desktop"> 
           </div>
           <div class="beep-project-info flex-column">
             <h2 class="heading-secondary project-heading">Video Game in One Week</h2>
@@ -89,5 +90,15 @@
           </div>
       </section>
     </main>
+      <div class="overlay-full-img hidden">
+        <div class="modal-container">
+          <img class="high-res-img hidden" data-caption="asel-laptop" src="./src/images/index-images/asel-desktop-high-res.png" alt="">
+          <img class="high-res-img mobile-img hidden" data-caption="asel-mobile" src="./src/images/index-images/asel-mobile-high-res.png" alt="">
+          <img class="high-res-img hidden" data-caption="chess-laptop" src="./src/images/index-images/chess-desktop-high-res.png" alt="">
+          <img class="high-res-img mobile-img hidden" data-caption="chess-mobile" src="./src/images/index-images/chess-mobile-high-res.png" alt="">
+          <img class="high-res-img hidden" data-caption="beep-desktop" src="./src/images/index-images/beep-n-bop copy.png" alt="">
+        </div>
+      <!-- <div class="overlay-full-img hidden"></div> -->
+      </div>
   </body>
 </html>

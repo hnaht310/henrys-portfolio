@@ -1,3 +1,11 @@
+body {
+  position: relative;
+}
+
+.header {
+  background-color: #0f0f0f;
+}
+
 .section-banner-home {
   background-color: #0f0f0f;
   color: #fff;
@@ -6,12 +14,17 @@
 }
 
 .banner-home-container {
-  min-width: 70rem;
+  min-width: 50rem;
   width: 90vw;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 0.8rem;
   justify-content: center;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.first-line {
 }
 
 .first-line,
@@ -105,6 +118,47 @@
   filter: drop-shadow(1rem 1.4rem #3b730d);
 }
 
+.high-res-img {
+  /* position: absolute; */
+  /* top: 25%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%); */
+  /* z-index: 1000; */
+  width: 75vw;
+}
+
+.mobile-img {
+  width: 34vw;
+  height: 80vh;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-full-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
+
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
@@ -135,7 +189,7 @@
 @media (max-width: 59em) {
   .grid-ux {
     grid-template-columns: 1fr;
-    /* gap: 5.2rem; */
+    /* grid-template-columns: 390px; */
     grid-template-areas:
       'a'
       'b'
@@ -143,10 +197,43 @@
       'd'
       'e'
       'f';
+    gap: 3.2rem;
   }
-  .img-container {
+
+  section {
+    padding: 3.2rem 0;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .main-nav-list {
+    padding: 2.4rem;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+    font-weight: 100;
+    line-height: 11.2rem;
+    margin-bottom: 0;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 5.7rem;
+    margin-bottom: 0;
+  }
+
+  .flex-column {
+    gap: 1.2rem;
+  }
+
+  /* .img-container {
+    width: 100%;
     margin: 0 auto;
-  }
+  } */
 
   .asel-project-info {
     grid-area: a;
@@ -158,5 +245,83 @@
 
   .beep-project-info {
     grid-area: e;
+  }
+
+  .banner-home-container h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .section-gameplay-design {
+    padding: 0;
+  }
+
+  .banner-home-container h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 36em) {
+  html {
+    overflow-x: hidden;
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .main-nav {
+    height: 5rem;
+  }
+
+  .main-nav-list {
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  section {
+    padding: 2.4rem 0;
+  }
+
+  .section-banner-home {
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .section-gameplay-design {
+    padding: 0;
+  }
+
+  .banner-home-container {
+    min-width: 20rem;
+  }
+
+  .banner-home-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asel-laptop-img,
+  .chess-laptop-img,
+  .beep-n-bop-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .asel-mobile-img,
+  .chess-mobile-img {
+    width: 141px;
+    /* height: 264px; */
+    margin: 0 auto;
   }
 }
