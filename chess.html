@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+    <!-- styling -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/chess.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Chess.com</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link" id="author">Henry UX</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./index.html" class="main-nav-link">Work</a></li>
+          <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="section-banner">
+        <div class="banner">
+            <div class="banner-details">
+                <h1 class="heading-primary">Chess.com</h1>
+                <p class="banner-description">
+                    Chess.com held a redesign competition for their homepage. Their main feature is playing chess online.
+                </p>
+            </div>
+            <div class="banner-images-container">
+                <div class="single-img">
+                    <img src="./src/images/chess-images/chess-banner-img.png" alt="banner-image" class="banner-img" />
+                </div>
+                <div class="single-img">
+                    <img src="./src/images/chess-images/chess-banner-img-2.png" alt="banner-image" class="banner-img" />
+                </div>
+            </div>
+        </div>
+      </section>
+    </header>
+    <main>
+        <!-- SECTION BREAKDOWN -->
+        <section class="breakdown">
+            <div class="container">
+            <h2 class="heading-secondary">Breakdown</h2>
+            </div>
+            <div class="container breakdown-grid">
+            <div class="client-brief">
+                <h3 class="heading-tertiary">Client Brief</h3>
+                <p class="client-details">
+                Your challenge is to present a redesigned Chess.com that is visually delightful, brand familiar for the millions of exisiting players, and creates a friendly, rich, and intuitive user experience for all types of players.
+                </br> 
+                <br>
+                Style: our current designs feature elements of flat and material design with more muted colors. newer design trends are brightening back up, adding back depth, texture, and lighting. What should Chess.com look like in 2021?
+                </br> 
+                <br>    
+                UX: Choose web or mobile home screen. How do you present to all types of users the ability to experience our primary actions (play, puzzles, lessons), while also offering secondary features like Tournaments, Drills, and Puzzle Battles, but also have access to our awesome content, shows, events, and articles while also having layers of social elements, friends, clubs, leaderboards, stats, etc. There are lot of layers to this onion! How would you organize them?
+                </p>
+            </div>
+            <div>
+                <div class="deliverables">
+                    <h3 class="heading-tertiary">Deliverables</h3>
+                    <div class="deliverables-details">
+                        <p class="deliverable-item"><i class="fa-solid fa-circle-check"></i>Lo-fi wireframe</p>
+                    </div>
+                </div>
+                <div class="situation">
+                    <h3 class="heading-tertiary">Situation</h3>
+                    <div class="situation-details">
+                    <p class="situation-description">This was a design competition that spanned 2 weeks and was a solo project.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- SECTION EVALUATING ORIGINAL DESIGN -->
+        <section class="section-evaluating-design">
+            <div class="container">
+            <h2 class="heading-secondary">Evaluating original design</h2>
+            </div>
+            <div class="container flex-column">
+            <div class="evaluating-info">
+                <p>Current design has related elements, split throughout the page</p>
+            </div>
+            <div class="design-img-container">
+                <img src="./src/images/chess-images/evaluating-design-2.png" alt="original design one" class="original-design-img">
+            </div>
+            <p>A lot of content is cut below the fold</p>
+            <div class="design-img-container">
+                <img src="./src/images/chess-images/evaluating-design-2.png" alt="original design one" class="original-design-img">
+            </div>
+            <div class="design-img-container">
+                <img src="./src/images/chess-images/evaluating-design-2.png" alt="original design one" class="original-design-img">
+            </div>
+            </div>
+        </section>
+        <!-- SECTION Lo-fi Iterations -->
+        <section class="section-lo-fi">
+            <div class="container lo-fi-container">
+            <h2 class="heading-secondary">Lo-fi Iterations</h2>
+            <p>I categorized users by the actions that could be taken on the site. I kept the idea of it being visually simple while still having all the features that a power user would use, in mind. Assuming that power users would be the most active and therefore an important customer base for the business. </p>
+            </div>
+            <div class="container grid grid--2-cols lofi-grid">
+            <!-- social -->
+            <div class="flex-column">
+                <h3 class="heading-tertiary">The social focused player</h3>
+                <p>Prioritized the social aspects of chess.com (friends, leaderboards, etc).  These features take precedence in the above the fold UI, sharing their space with articles and news briefings to help build a sense of community on the site.</p>
+            </div>
+            <img src="./src/images/chess-images/lofi-1.png" class="lofi-1-img">
+            <!-- stats -->
+            <div class="flex-column">
+                <h3 class="heading-tertiary">The stats focused player</h3>
+                <p>Focuses on numbers and statistics of in-game information to incentivize play and competition. Use of ad space was used to separate other elements like articles and events to keep the users attention on their own information.</p>
+            </div>
+            <img src="./src/images/chess-images/lofi-2.png" class="lofi-2-img">
+            <!-- hybrid -->
+            <div class="flex-column">
+                <h3 class="heading-tertiary">The hybrid</h3>
+                <p>Built with the two extremes combined to create a more balanced and approachable experience. Some statistical information on top exists, while allowing for more articles and events to show above the fold. The main 3 actions of play, lessons, and puzzles take up a majority of the screen to draw the user towards those actions. </p>
+            </div>
+            <img src="./src/images/chess-images/lofi-3.png" class="lofi-3-img">
+            <!-- landing page -->
+            <div class="flex-column">
+                <h3 class="heading-tertiary">Landing page</h3>
+                <p>I wanted the landing page to be more consise and separate the different actons you can do on the site clearer.
+                <br><br>
+                My thought process for adding the “Play a friend” button was to onboard 2 people on to the site quicker. Where both players at the end of the match would be asked to create an account to save their user data. </p>
+            </div>
+            <img src="./src/images/chess-images/lofi-4.png" class="lofi-4-img">
+            </div>
+        </section>
+        <!-- SECTION Hi-fi screens -->
+        <section class="section-hi-fi">
+            <div class="container hi-fi-container">
+            <h2 class="heading-secondary">Hi-fi screens</h2>
+            </div>
+            <div class="container grid grid--2-cols hifi-grid">
+            <!-- Color choice -->
+                <div class="flex-column">
+                    <h3 class="heading-tertiary">Color choices</h3>
+                    <p>The choices for the colors of each actions (lessons, news, puzzles) were taken from the hues chess.com already use. Increasing the saturation and made them more prominent to establish a strong connection from a users first interaction on the site.</p>
+                </div>
+                <img src="./src/images/chess-images/hi-fi-1.png" class="hifi-1-img">
+            <!-- stats -->
+            <div class="flex-column">
+                <h3 class="heading-tertiary">Additions and consolidations</h3>
+                <p>Added a notification icon. The original design had the home button act as both notification and navigation, causing confusion.
+                <br><br>
+                Grouped similar elements, while keeping the depth of each element. In some cases I was able to flesh out functionality for certain elements. For example, I was able to add more statistical player data for multiple modes of play.
+                <br><br>
+                The play button displays a profile image of friend to challenge friends without navigating from the homes screen.
+                <br><br>
+                In lessons, I added a progress bar to gamify and incentivize completion of the course.
+                <br><br>
+                I added a section for the daily puzzle and a counter for free users to track their daily puzzle limits.</p>
+            </div>
+            <img src="./src/images/chess-images/hi-fi-2.png" class="hifi-2-img"> 
+        </section>
+        <!-- Diff screens -->
+        <section class="section-diff-screens">
+            <div class="container diff-screens-container">
+            <h2 class="heading-secondary">Explorations for different screens</h2>
+            <p>I took a break from iterating on hifi screens, to see how the design could be translated to other screen. </p>
+            </div>
+            <div class="container grid grid--2-cols diff-screens-grid">
+            <div class="flex-column">
+                <h3 class="heading-tertiary">Current game page</h3>
+                <p>The biggest room for improvement I found was separating features to different screens. Challenges, game options, custom game configuration, and player search were all found on one side bar</p>
+            </div>
+            <img src="./src/images/chess-images/game-screen-1.png" class="game-screen-1-img">
+            <div class="flex-column">
+                <h3 class="heading-tertiary">Similar mistakes</h3>
+                <p>My first iteration was focused on looks without thinking about usability. The layout expands the chessboard and moves the navbar to the top leaving more room for player data.</p>
+            </div>
+            <img src="./src/images/chess-images/game-screen-2.png" class="game-screen-2-img">
+            <div class="flex-column">
+                <h3 class="heading-tertiary">Separating actions</h3>
+                <p>After thinking thinking about the issue, I created this screen to focus on which mode of play you wanted.
+                <br><br>
+                This also allows to show more niche options of play and add a bots sections to justify the elmination of the “play a computer” button on the home screen. </p>
+            </div>
+            <img src="./src/images/chess-images/game-screen-3.png" class="game-screen-3-img">
+            </div>
+        </section>
+        <!-- Final round of hi-fi designs -->
+        <section class="section-final-hi-fi">
+            <div class="container final-hi-fi-container">
+                <h2 class="heading-secondary">Final round of hi-fi designs</h2>
+            </div>
+            <div class="container grid grid--2-cols final-hifi-grid">
+                <!-- Evolution of home page -->
+                <div class="flex-column">
+                    <h3 class="heading-tertiary">Evolution of landing page</h3>
+                    <p>From the lo-fi mockups I added a robot icon to add keep the “Play a computer” option from the original landing page.</p>
+                </div>
+                <img src="./src/images/chess-images/landing-page-1.png" class="landing-page-1-img">  
+                <!-- stats -->
+                <div class="flex-column">
+                    <p>From feedback, I lowered the opacity of the buttons (Start Lessons, Chess Today, Solve Puzzles) and replaced the robot icon because it might not be understood by all users.
+                    <br><br>
+                    I replaced the chessboard with a representation of chess. The black and white cones representative of the pawns.
+                    <br><br>    
+                    I changed the colors to a more drastic gradient to bring more attention and make it look less flat.</p>
+                </div>
+                <img src="./src/images/chess-images/landing-page-2.png" class="landing-page-2-img">
+                <div class="flex-column">
+                    <p>Added a gray background to push the idea of black and white fighting against each other.</p>
+                </div>
+                <img src="./src/images/chess-images/landing-page-3.png" class="landing-page-3-img">
+                <div class="flex-column">
+                    <p>Moved the buttons and text to the left to fully utilize the width of the page and give more space for black and white pawn. I added a subtle geometry background to the gray background to make it more visually interesting.</p>
+                </div>
+                <img src="./src/images/chess-images/landing-page-4.png" class="landing-page-4-img">
+
+                <!-- Evolution of home page -->
+                <div class="flex-column">
+                    <h3 class="heading-tertiary">Evolution of home page</h3>
+                    <p>This is the first hi-fi iteration from lo-fi</p>
+                </div>
+                <img src="./src/images/chess-images/home-page-1.png" class="home-page-1-img">  
+                <div class="flex-column">
+                    <p>I experimented with the header font making it larger and lowering the weight. 
+                    <br><br>
+                    I also changed the color of the chart to blue to keep the design from looking too monochromatic. Blue is a common color used to represent statistical data. 
+                    <br><br>        
+                    I played around with the position of the chessboard on the puzzle button, taking up most of the bottom portion of the button felt like a poor utilization of the space.
+                    </p>
+                </div>
+                <img src="./src/images/chess-images/home-page-2.png" class="home-page-2-img">
+                <div class="flex-column">
+                    <p>I moved around the board to see to what extremes I could push it without it being useless. 
+                    <br><br>
+                    I changed the names to be the buttons in the tournaments section, so users could have a larger space to click to help prevent accidental clicking. </p>
+                </div>
+                <img src="./src/images/chess-images/home-page-3.png" class="home-page-3-img">
+                <div class="flex-column">
+                    <p>The accessability of the titles felt like an issue. I had slight trouble reading them so I enlarged them so they would be more accessible for people with worse vision. 
+                    <br><br>
+                    I removed the nav bar background and I also added a ranking score to the left side of the puzzle for users to get a quick look at what difficult of puzzle they would be completing.</p>
+                </div>
+                <img src="./src/images/chess-images/home-page-4.png" class="home-page-4-img">
+            </div>
+        </section>
+        <!-- Final designs -->
+        <section class="section-final-designs">
+            <div class="container final-designs-container">
+                <h2 class="heading-secondary">Final designs</h2>
+            </div>
+            <div class="container final-design-grid">
+                <div class="flex-column">
+                    <div>
+                        <img src="./src/images/chess-images/final-1.png" class="final-1-img">
+                    </div>
+                    <p>Two things I would want to change is to look around the IA of the site and consolidate the nav bar into something more managable. Chess.com has a lot of features that are hidden and I would want to bring some of those to the forefront of the site.
+                    <br><br>
+                    I also feel the accessability of the cards could be addressed. They look good but I have concerns that some would have trouble reading them.</p>
+                </div>
+                <div class="flex-column">
+                    <div>
+                        <img src="./src/images/chess-images/final-2.png" class="final-2-img">
+                    </div>
+                    <p>I changed the tournament buttons to white because I didn’t feel like they need to bring more attention. They aren’t part of the main actions that chess.com wanted ot push. I also have the same concerns of accessability as the landing page.
+                    <br><br>
+                    I would also like to look at statistics of the most common actions done by users when look up other users and adjusted the search bar buttons to that. I would want the player profile element to automatically change to reflect the player’s information that’s being searched.
+                    </p>
+                </div>
+                <h3 class="heading-tertiary span-2-columns">Translating to mobile</h3>
+                <div>
+                    <img src="./src/images/chess-images/mobile-2.png" class="mobile-2-img">
+                </div>
+                <div class="home-page-mobile">
+                    <h3 class="heading-tertiary">Home page</h3>
+                    <div>
+                    <p class="home-page-mobile-description">The home page’s player profile was one of the more difficult items to translate. The spacing between element and icon for each mode of play were too close to distinguish which number correlated to which icon. 
+                    <br><br>
+                    I added a bit of color to help separate each mode. The idea of colors was always intended in the desktop design but as an indicator to show which stat you were looking at, at the current moment.</p>
+                    </div>
+                </div>
+                <div class="landing-page-mobile">
+                    <h3 class="heading-tertiary">Landing page</h3>
+                    <div>
+                    <p class="landing-page-mobile-description">This page is filled with interactable elements throughout the screen. I was thinking of eliminating a few buttons to make the chances of accidental presses less likely. Ultimately, I decided against it. I would want to see how this page performs live to see if any changes would need to be made to it.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./src/images/chess-images/mobile-2.png" class="mobile-2-img">
+                </div>
+            </div>
+        </section>
+        <!-- Conclusion -->
+       <section class="conclusion">
+        <div class="container">
+            <h2 class="heading-secondary">Conclusion</h2>
+        </div>
+        <div class="container grid grid--2-cols conclusion-grid">
+            <p class="conclusion-text">
+                This was one of the only projects that i’ve done without any research or testing behind it. I made a lot of guesses and I feel like the design suffered from it. I really think this project highlighted the importance of research.
+                <br><br>
+                I also ended up not winning the competition and only got 9 months of their premium membership for my work. A value of 79 dollars.
+            </p>
+            <div class="next-project-link flex-column">
+                <div class="img-container">
+                        <img src="./src/images/chess-images/beep-1.png" class="beep-img-1">
+                        <img src="./src/images/chess-images/beep-2.png" class="beep-img-2">
+                </div>
+                <a href="./beep-n-bop.html" class="beep-case-study"><i class="fa-regular fa-clipboard fa-lg"></i>Beep N Bop Case Study</a>
+            </div>
+        </div>
+       </section> 
+    </main>
+  </body>
+</html>

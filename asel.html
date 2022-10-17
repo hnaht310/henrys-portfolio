@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+    <!-- styling -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/beep.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./beep-n-bop.js" defer></script>
+    <title>Beep N' Bop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="./index.html" class="main-nav-link" id="author">Henry UX</a></li>
+          <li><a href="./index.html" class="main-nav-link">Home</a></li>
+          <li><a href="./index.html" class="main-nav-link">Work</a></li>
+          <li><a href="./contact.html" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="section-banner">
+        <div class="banner">
+          <div class="banner-details">
+            <h1 class="heading-primary">Beep N' Bop</h1>
+            <p class="banner-description">
+              “Beep N Bop” is a food-themed video game created for the Design
+              Buddies 2021 Game Jam.
+            </p>
+          </div>
+          <img src="./src/images/beep-images/beep-banner.png" alt="banner-image" class="banner-img" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- SECTION BREAKDOWN -->
+      <section class="breakdown">
+        <div class="container">
+          <h2 class="heading-secondary">Breakdown</h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="situation">
+            <h3 class="heading-tertiary">Situation</h3>
+            <p class="situation-details">
+              The Game Jam was <strong>one week</strong>. Our team consisted of two designer, a
+              developer, an artist, and a music composer.
+            </br> 
+            </br>
+            We <strong>worked remotely</strong> for
+              the project, shared files through <strong>Github</strong>ong, and used <strong>Figma</strong> to design
+              the project, and used <strong>Trello</strong> to keep track of our files and
+              progress.
+            </p>
+          </div>
+          <div class="goal">
+            <h3 class="heading-tertiary">Goal</h3>
+            <div class="goal-details">
+              <p class="goal-description">Our project goal was to win either the community or the judges vote in a category</p>
+              <ul class="goal-list">
+                <li class="goal-item"><img class="goal-icon" src="./src/images/beep-images/bottle.png" alt="bottle">Fun to play</li>
+                <li class="goal-item"><img class="goal-icon" src="./src/images/beep-images/artist-palette.png" alt="bottle">Best art</li>
+                <li class="goal-item"><img class="goal-icon" src="./src/images/beep-images/pizza.png" alt="bottle">Most related to theme</li>
+                <li class="goal-item"><img class="goal-icon" src="./src/images/beep-images/heart.png" alt="bottle">Most inclusive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="deliverables">
+            <h3 class="heading-tertiary">Deliverables</h3>
+            <ul class="deliverable-list">
+              <li class="deliverable-item"><i class="fa-solid fa-circle-check"></i>Lo-fi wireframe</li>
+              <li class="deliverable-item"><i class="fa-solid fa-circle-check"></i>Hi-fi prototype</li>
+              <li class="deliverable-item"><i class="fa-solid fa-circle-check"></i>User flow</li>
+              <li class="deliverable-item"><i class="fa-solid fa-circle-check"></i>A/B testing</li>
+              <li class="deliverable-item"><i class="fa-solid fa-circle-check"></i>Usability testing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION USER FLOW -->
+      <section class="section-user-flow">
+        <div class="container">
+          <h2 class="heading-secondary">Creating the design</h2>
+        </div>
+        <div class="container grid-user-flow">
+          <!-- User flow -->
+          <div class="user-flow-info flex-column">
+            <h3 class="heading-tertiary">Level Select User Flow</h3>
+            <p>We created a simple user flow to see what pages we would need. Conversations sprouted from the lo-fi wireframes. <br> <br>
+            One discussion was about whether a second screen was needed for the level select flow. We decided that the second page would prevent players from loading into the wrong level. This was worth the addition of another page.</p>
+          </div>
+          <img src="./src/images/beep-images/user-flow/flow-chart.png" alt="user flow chart" class="user-flow-img">
+
+          <!--Fun fact -->
+          <img src="./src/images/beep-images/user-flow/menu.png" alt="menu" class="fun-fact-img">
+          <div class="fun-fact flex-column">
+            <h3 class="heading-tertiary">Fun Fact</h3>
+            <p>Before the game jam theme was announced. We had already created the WIP (Work in progress) name for our game... PROJECT EGGROLL! <br> <br>
+            What a coinkydink <span class="hushed-face">&#128559;</span></p>
+          </div>
+          <!-- Level select menu -->
+          <img src="./src/images/beep-images/user-flow/level-select.png" alt="level-select" class="level-select-img">
+          <img src="./src/images/beep-images/user-flow/pre-game-menu-1.png" alt="pregame menu" class="pre-game1-img">
+          <!-- Assuming functionality -->
+          <div class="functionality flex-column">
+            <h3 class="heading-tertiary">Assuming Functionality</h3>
+            <p>We still weren’t sure what our developer was able to do in the timeframe. He told us to do whatever we wanted and we would scale back if needed. So we experimented with customization options that were ultimately not included in the game.</p>
+          </div>
+          <img src="./src/images/beep-images/user-flow/pre-game-menu-2.png" alt="pregame menu" class="pre-game2-img">
+          <!-- Transitioning into Mid-fi -->
+          <div class="mid-fi flex-column">
+            <h3 class="heading-tertiary">Transitioning into Mid-fi</h3>
+            <p>Because of our limited time, our design was based on assumptions. We iterated from our lo-fi concepts with the inspiration board in mind. To make our design look like a menu, we put prices next to each option. <br> <br>
+            Games often have virtual currency to manage. Our game didn’t have this mechanic. To minimize confusion, we had each price be a different real-world currency.</p>
+          </div>
+          <img src="./src/images/beep-images/user-flow/splash.png" alt="splash" class="splash-img">
+      </section>
+
+    </main>
+  </body>
+</html>
