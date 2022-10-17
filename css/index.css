@@ -53,22 +53,6 @@ body {
   background-position: -30% 45%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: text-simple-animation-rev 0.8s ease-out;
-}
-
-@keyframes text-simple-animation-rev {
-  0% {
-    background-size: 0%;
-  }
-  25% {
-    background-size: 25%;
-  }
-  50% {
-    background-size: 50%;
-  }
-  100% {
-    background-size: 100%;
-  }
 }
 
 .case-study-link {
