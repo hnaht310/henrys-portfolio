@@ -123,12 +123,6 @@ body {
 }
 
 .high-res-img {
-  /* position: absolute; */
-  /* top: 25%;
-  left: 50%;
-  width: 60%;
-  transform: translate(-50%, -50%); */
-  /* z-index: 1000; */
   width: 75vw;
 }
 
@@ -262,6 +256,14 @@ body {
   .banner-home-container h1 {
     font-size: 2.8rem;
   }
+
+  .high-res-img {
+    width: 90vw;
+  }
+
+  .mobile-img {
+    width: 40vw;
+  }
 }
 
 /**************************/
@@ -322,5 +324,13 @@ body {
     width: 141px;
     /* height: 264px; */
     margin: 0 auto;
+  }
+
+  .high-res-img {
+    width: 100vw;
+  }
+
+  .mobile-img {
+    width: 50vw;
   }
 }
