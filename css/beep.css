@@ -316,8 +316,21 @@ iframe {
     min-width: 80%;
     margin: 0 auto;
   }
+
   .inspiration-board {
     height: 40vh;
+  }
+
+  /* .testing-img-container {
+    margin: 0 auto;
+  } */
+
+  .testing-1-img,
+  .testing-2-img,
+  .testing-3-img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -326,6 +339,11 @@ iframe {
 /**************************/
 @media (max-width: 44em) {
   .grid--3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .grid--2-cols {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
