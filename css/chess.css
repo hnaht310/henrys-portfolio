@@ -303,19 +303,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; */
-  }
-
-  .single-img {
   }
 
   .banner-img-1 {
     display: block;
     width: 90%;
     margin: 0 auto;
-    /* width: 300px; */
   }
 
   .banner-img-2 {
@@ -324,11 +317,6 @@
 
   .breakdown-grid {
     grid-template-columns: 1fr;
-    row-gap: 4.8rem;
-  }
-
-  .img-container {
-    width: 188px;
-    height: 110px;
+    row-gap: 1.6rem;
   }
 }

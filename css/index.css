@@ -249,10 +249,6 @@ body {
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 @media (max-width: 44em) {
-  .section-gameplay-design {
-    padding: 0;
-  }
-
   .banner-home-container h1 {
     font-size: 2.8rem;
   }
@@ -293,10 +289,6 @@ body {
   .section-banner-home {
     padding-top: 1.2rem;
     padding-bottom: 2.4rem;
-  }
-
-  .section-gameplay-design {
-    padding: 0;
   }
 
   .banner-home-container {
