@@ -60,18 +60,6 @@ function hideSmallPrints() {
   });
 }
 
-// // ✅ Get all elements with `data-id` attribute
-// const elements1 = document.querySelectorAll('[data-id]');
-// console.log(elements1); // 👉️ [div, div]
-
-// // ✅ Get only DIV elements with `data-id` attribute
-// const elements2 = document.querySelectorAll('div[data-id]');
-// console.log(elements2); // 👉️ [div, div]
-
-// // ✅ Get only elements where data-id = box1
-// const elements3 = document.querySelectorAll(`[data-id="box1"]`);
-// console.log(elements3); // 👉️ [div]
-
 const boardsContainer = document.querySelector('.inspiration-board-container');
 const boardsList = document.querySelectorAll('.inspiration-board');
 const titlesContainer = document.querySelector('.titles-list');

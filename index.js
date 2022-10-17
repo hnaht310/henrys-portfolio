@@ -11,12 +11,8 @@ imgContainers.forEach((container) => {
       const caption = e.target.dataset.caption;
       //   remove hidden classes from overlay and high-res image
       fullOverlay.classList.remove('hidden');
-      const elements = document.querySelectorAll(`[data-caption=${caption}]`);
-      elements.forEach((element) => {
-        if (element.classList.contains('high-res-img')) {
-          element.classList.remove('hidden');
-        }
-      });
+      // find the element that has an id of data-caption's value that has been identified
+      document.querySelector(`#${caption}`).classList.remove('hidden');
     }
   });
 });

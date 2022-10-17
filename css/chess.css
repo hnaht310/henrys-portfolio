@@ -19,7 +19,8 @@
   gap: 2.4rem;
 }
 
-.banner-img {
+.banner-img-1,
+.banner-img-2 {
   width: 100%;
   height: 100%;
 }
@@ -201,8 +202,38 @@
     gap: 4.8rem;
   }
 
+  .heading-primary {
+    font-size: 8.6rem;
+    line-height: 7rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .breakdown-grid {
+    column-gap: 6.4rem;
+  }
+
   .final-design-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-img,
+  .mobile-1-img,
+  .mobile-2-img {
+    margin: 0 auto;
+  }
+
+  .mobile-1-img,
+  .mobile-2-img {
+    height: 70rem;
   }
 
   .span-2-columns {
@@ -216,13 +247,93 @@
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 @media (max-width: 44em) {
-  .grid--3-cols {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
+  .breakdown-grid {
+    column-gap: 3.2rem;
   }
 
   .conclusion-grid {
     grid-template-columns: 1fr;
     row-gap: 2rem;
+  }
+
+  .project-img {
+    width: 80%;
+  }
+
+  .final-1-img,
+  .final-2-img {
+    margin: 0 auto;
+  }
+
+  .mobile-1-img,
+  .mobile-2-img {
+    height: 40rem;
+  }
+
+  .img-container {
+    width: 214px;
+    height: 126px;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    overflow-x: hidden;
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .main-nav {
+    height: 5rem;
+  }
+
+  .main-nav-list {
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  section {
+    padding: 2.4rem 0;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .banner-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; */
+  }
+
+  .single-img {
+  }
+
+  .banner-img-1 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    /* width: 300px; */
+  }
+
+  .banner-img-2 {
+    width: 110px;
+  }
+
+  .breakdown-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .img-container {
+    width: 188px;
+    height: 110px;
   }
 }

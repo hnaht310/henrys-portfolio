@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
 }
@@ -130,7 +134,6 @@ body {
 
 .mobile-img {
   width: 34vw;
-  height: 80vh;
 }
 
 .modal-container {
@@ -214,15 +217,11 @@ body {
 
   .heading-primary {
     font-size: 6.2rem;
-    font-weight: 100;
-    line-height: 11.2rem;
     margin-bottom: 0;
   }
 
   .heading-secondary {
     font-size: 3.6rem;
-    font-weight: 300;
-    line-height: 5.7rem;
     margin-bottom: 0;
   }
 
@@ -269,7 +268,7 @@ body {
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 36em) {
+@media (max-width: 34em) {
   html {
     overflow-x: hidden;
     /* 8px / 16px = 0.5 = 50% */

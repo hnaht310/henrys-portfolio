@@ -287,6 +287,21 @@ iframe {
     grid-template-columns: 1fr;
   }
 
+  .heading-primary {
+    font-size: 8.6rem;
+    line-height: 7rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
   .patterns-container {
     min-width: 80%;
     margin: 0 auto;
@@ -320,11 +335,28 @@ iframe {
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 36em) {
+@media (max-width: 34em) {
   html {
     overflow-x: hidden;
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+
+  .main-nav {
+    height: 5rem;
+  }
+
+  .main-nav-list {
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  section {
+    padding: 2.4rem 0;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
   }
 
   .grid-user-flow {
