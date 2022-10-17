@@ -223,10 +223,13 @@ body {
     gap: 1.2rem;
   }
 
-  /* .img-container {
-    width: 100%;
+  .img-container {
     margin: 0 auto;
-  } */
+  }
+
+  .mobile-img {
+    width: 30vw;
+  }
 
   .asel-project-info {
     grid-area: a;
