@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* fonts */
+  --header-h1: Roboto;
+
+  /* font sizes */
+  --caption-italics-size: 12px;
+  --body-strong-size: 16px;
+  --font-size-lg: 18px;
+  --header-h3-size: 36px;
+  --header-h2-size: 48px;
+  --header-h1-size: 96px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-orange: #eeb258;
+  --color-green-100: #21f336;
+  --color-red-100: #fd1b1b;
+  --color-brown: #c00909;
+}
+
 html {
   font-size: 62.5%;
 }
